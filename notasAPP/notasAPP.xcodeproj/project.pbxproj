@@ -13,6 +13,7 @@
 		9D916A6428EFA7EF00747AAE /* notasAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D916A6228EFA7EF00747AAE /* notasAPP.xcdatamodeld */; };
 		9D916A6628EFA7FD00747AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D916A6528EFA7FD00747AAE /* Assets.xcassets */; };
 		9D916A6928EFA7FD00747AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D916A6728EFA7FD00747AAE /* LaunchScreen.storyboard */; };
+		EE2E3FCA28EFADF60007CE40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2E3FC928EFADF60007CE40 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9D916A6528EFA7FD00747AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D916A6828EFA7FD00747AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D916A6A28EFA7FD00747AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2E3FC928EFADF60007CE40 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		9D916A5828EFA7EF00747AAE /* notasAPP */ = {
 			isa = PBXGroup;
 			children = (
-				9D916A5928EFA7EF00747AAE /* AppDelegate.swift */,
-				9D916A5B28EFA7EF00747AAE /* SceneDelegate.swift */,
-				9D916A5D28EFA7EF00747AAE /* ViewController.swift */,
-				9D916A6528EFA7FD00747AAE /* Assets.xcassets */,
-				9D916A6728EFA7FD00747AAE /* LaunchScreen.storyboard */,
+				EE2E3FCB28EFADFB0007CE40 /* Utilities */,
+				EE2E3FC628EFADCF0007CE40 /* Main  */,
 				9D916A6A28EFA7FD00747AAE /* Info.plist */,
 				9D916A6228EFA7EF00747AAE /* notasAPP.xcdatamodeld */,
 			);
 			path = notasAPP;
+			sourceTree = "<group>";
+		};
+		EE2E3FC628EFADCF0007CE40 /* Main  */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E3FC828EFADE40007CE40 /* View */,
+				EE2E3FC728EFADDB0007CE40 /* View Controller */,
+			);
+			path = "Main ";
+			sourceTree = "<group>";
+		};
+		EE2E3FC728EFADDB0007CE40 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D916A5D28EFA7EF00747AAE /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		EE2E3FC828EFADE40007CE40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E3FC928EFADF60007CE40 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE2E3FCB28EFADFB0007CE40 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9D916A6528EFA7FD00747AAE /* Assets.xcassets */,
+				9D916A6728EFA7FD00747AAE /* LaunchScreen.storyboard */,
+				9D916A5928EFA7EF00747AAE /* AppDelegate.swift */,
+				9D916A5B28EFA7EF00747AAE /* SceneDelegate.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 				9D916A5E28EFA7EF00747AAE /* ViewController.swift in Sources */,
 				9D916A5A28EFA7EF00747AAE /* AppDelegate.swift in Sources */,
 				9D916A5C28EFA7EF00747AAE /* SceneDelegate.swift in Sources */,
+				EE2E3FCA28EFADF60007CE40 /* MainView.swift in Sources */,
 				9D916A6428EFA7EF00747AAE /* notasAPP.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
