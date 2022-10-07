@@ -10,17 +10,18 @@ import UIKit
 
 class MainView: UIView {
 
-    lazy private var textField: UITextField = {
-        let textField = UITextField()
-        textField.placeholder = "Pesquise"
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.borderStyle = .roundedRect
-        return textField
+    lazy private var searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        searchBar.placeholder = "Pesquise"
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        searchBar.layer.borderWidth = 1
+        searchBar.layer.borderColor = UIColor.white.cgColor
+        return searchBar
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .blue
+        backgroundColor = .white
         setupView()
     }
     
@@ -33,13 +34,12 @@ class MainView: UIView {
     }
     
     private func setupTextField() {
-        addSubview(textField)
+        addSubview(searchBar)
         NSLayoutConstraint.activate([
-            textField.topAnchor.constraint(equalTo: topAnchor),
-            textField.leadingAnchor.constraint(equalTo: leadingAnchor),
-            textField.trailingAnchor.constraint(equalTo: trailingAnchor)
+            searchBar.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            searchBar.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            searchBar.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)
         ])
-        
     }
     
 }
