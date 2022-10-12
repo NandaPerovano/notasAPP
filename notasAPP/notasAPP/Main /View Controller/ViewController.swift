@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     let mainView = MainView()
     
     override func loadView() {
-        view = mainView
+        self.view = mainView
     }
 
     override func viewDidLoad() {
