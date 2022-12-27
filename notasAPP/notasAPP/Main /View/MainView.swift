@@ -43,10 +43,10 @@ class MainView: UIView {
             searchBar.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             searchBar.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             searchBar.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            contentView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            contentView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 80),
-            contentView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -80),
-            contentView.heightAnchor.constraint(equalToConstant: 160)
+            contentView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            contentView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            contentView.heightAnchor.constraint(equalToConstant: 160),
+            contentView.widthAnchor.constraint(equalToConstant: 160)
         ])
     }
     
